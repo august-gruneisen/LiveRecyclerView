@@ -1,7 +1,4 @@
 # DataBindingRecyclerView
-A dynamic RecyclerView that binds each ViewHolder to specific data for its position in a list
-
-# DataBindingRecyclerView
 A dynamic RecyclerView that binds each ViewHolder to its specific position in a list of data
 
 ## Use case:
