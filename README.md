@@ -1,5 +1,5 @@
 # DataBindingRecyclerView
-A dynamic RecyclerView that binds each ViewHolder to the data for its specific position in the list
+A dynamic RecyclerView that binds each ViewHolder to specific data for its position in a list
 
 ## Use case:
 Displaying a rapid influx of data that updates frequently, as in the case of displaying Bluetooth scan results in real time.
