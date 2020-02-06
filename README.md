@@ -1,8 +1,8 @@
 # DataBindingRecyclerView
-A dynamic RecyclerView binding deach ViewHolder to the data for its position in the list
+A dynamic RecyclerView that binds each ViewHolder to the data for its specific position in the list
 
 ## Use case:
-Working with a rapidly changing set of data, as in the case of displaying Bluetooth Scan Results in real time.
+Displaying a rapid influx of data that updates frequently, as in the case of displaying Bluetooth Scan Results in real time.
 
 ## The problem:
-Scan results are generally stored in a list, then displayed with an ordinary RecyclerView.
+Scan results are generally stored in a list displayed by an ordinary RecyclerView. The scanner often picks up the same peripheral multiple times, so we generally check the list for duplicates before adding new items. In doing so, we miss out on the ability to display the RSSI value (signal strength) of the latest scan for each peripheral.
