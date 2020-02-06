@@ -9,6 +9,7 @@
         <variable name="viewModel" type="com.augustg.databindingrecyclerview.ScanViewModel" />
 
         <variable name="position" type="Integer" />
+
     </data>
 
     <RelativeLayout
