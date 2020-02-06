@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val adapter = Adapter(viewModel)
+        val adapter = DataBindingRecyclerViewAdapter(viewModel)
 
         recycler_view.apply {
             this.hasFixedSize()
