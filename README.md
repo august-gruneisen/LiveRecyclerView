@@ -21,4 +21,5 @@ The DataBindingRecyclerViewAdapter only requires two things to run:
   `<variable name="viewModel" type="com.package.YourViewModel" />` [(example)][2]
 
 [1]:https://github.com/augustgrun/DataBindingRecyclerView/blob/master/app/src/main/java/com/augustg/databindingrecyclerview/ScanViewModel.kt
-[2]:https://github.com/augustgrun/DataBindingRecyclerView/blob/master/app/src/main/res/layout/scan_result_view.xml
+[2]:https://github.com/augustgrun/DataBindingRecyclerView/blob/master/app/src/main/res/layout/scan_result_item.xml
+
