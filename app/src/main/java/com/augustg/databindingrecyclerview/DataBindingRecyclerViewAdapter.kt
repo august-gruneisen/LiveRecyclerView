@@ -4,11 +4,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
-import com.augustg.databindingrecyclerview.databinding.ScanResultViewBinding
+import com.augustg.databindingrecyclerview.databinding.ScanResultItemBinding
 
 class DataBindingRecyclerViewAdapter(private val viewModel: ScanViewModel) : RecyclerView.Adapter<DataBindingRecyclerViewAdapter.ViewHolder>() {
 
-    inner class ViewHolder(private var binding: ScanResultViewBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(private var binding: ScanResultItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(position: Int, lifecycleOwner: LifecycleOwner) {
             binding.position = position
             binding.viewModel = viewModel
@@ -19,7 +19,7 @@ class DataBindingRecyclerViewAdapter(private val viewModel: ScanViewModel) : Rec
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater: LayoutInflater = LayoutInflater.from(parent.context)
-        val binding = ScanResultViewBinding.inflate(layoutInflater, parent, false)
+        val binding = ScanResultItemBinding.inflate(layoutInflater, parent, false)
         return ViewHolder(binding)
     }
 

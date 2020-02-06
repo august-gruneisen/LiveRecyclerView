@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/scan_result_view">
+        tools:listitem="@layout/scan_result_item">
 
     </androidx.recyclerview.widget.RecyclerView>
 
