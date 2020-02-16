@@ -14,7 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val adapter = LiveBoundRecyclerViewAdapter(viewModel)
+        /**
+         * Creates an instance of LiveBoundRecyclerViewAdapter
+         */
+        val adapter = LiveBoundRecyclerViewAdapter(viewModel) {_, position ->
+            viewModel.incrementItem(position)
+        }
 
         recycler_view.apply {
             this.hasFixedSize()
