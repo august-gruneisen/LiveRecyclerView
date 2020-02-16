@@ -1,11 +1,11 @@
-package com.augustg.databindingrecyclerview
+package com.augustg.liveboundrecyclerview
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
-import com.augustg.databindingrecyclerview.databinding.ListItemBinding
+import com.augustg.liveboundrecyclerview.databinding.ListItemBinding
 import kotlinx.android.synthetic.main.list_item.view.*
 
 /**

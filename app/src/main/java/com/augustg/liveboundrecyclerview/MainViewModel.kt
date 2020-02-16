@@ -1,4 +1,4 @@
-package com.augustg.databindingrecyclerview
+package com.augustg.liveboundrecyclerview
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

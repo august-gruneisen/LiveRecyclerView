@@ -1,4 +1,4 @@
-package com.augustg.databindingrecyclerview
+package com.augustg.liveboundrecyclerview
 
 import org.junit.Test
 

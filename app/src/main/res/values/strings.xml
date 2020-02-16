@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">DataBindingRecyclerView</string>
+    <string name="app_name">LiveBoundRecyclerView</string>
     <string name="button_text">Button</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.augustg.databindingrecyclerview
+package com.augustg.liveboundrecyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -36,6 +36,5 @@ class MainActivity : AppCompatActivity() {
             viewModel.addItem()
             adapter.notifyDataSetChanged()
         }
-
     }
 }

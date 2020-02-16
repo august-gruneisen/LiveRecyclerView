@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='DataBindingRecyclerView'
+rootProject.name='LiveBoundRecyclerView'
