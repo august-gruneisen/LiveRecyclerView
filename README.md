@@ -1,5 +1,7 @@
 # LiveBoundRecyclerView
-Example of a dynamic RecyclerView that binds each ViewHolder to rapidly changing data for its position in the adapter
+Example of a dynamic RecyclerView that binds each ViewHolder to data for its position in the adapter
+
+<img src="example.gif" width="300" alt="Example"/>
 
 ### Use case:
 Displaying a rapid stream of data that updates frequently, as in the case of displaying Bluetooth scan results in real time.
