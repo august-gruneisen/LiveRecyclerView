@@ -21,39 +21,5 @@ import org.junit.Rule
 @LargeTest
 class MainActivityTest {
 
-    @get:Rule
-    var activityRule: ActivityTestRule<MainActivity> = ActivityTestRule(MainActivity::class.java)
 
-    @Test
-    fun initial_noItemsDisplayed() {
-        onView(withId(R.id.recycler_view)).check(matches(hasChildCount(0)))
-    }
-
-    @Test
-    fun addItem_oneItemDisplayed() {
-        // add one item
-        onView(withId(R.id.add_item_button)).perform(ViewActions.click())
-        // check matches
-        onView(withId(R.id.recycler_view)).check(matches(hasChildCount(1)))
-    }
-
-    @Test
-    fun addTwoItems_twoItemsDisplayed() {
-        // add two items
-        onView(withId(R.id.add_item_button)).perform(ViewActions.click())
-        onView(withId(R.id.add_item_button)).perform(ViewActions.click())
-        // check matches
-        onView(withId(R.id.recycler_view)).check(matches(hasChildCount(2)))
-    }
-
-    @Test
-    fun clear_noItemsDisplayed() {
-        // add items
-        onView(withId(R.id.add_item_button)).perform(ViewActions.click())
-        onView(withId(R.id.add_item_button)).perform(ViewActions.click())
-        // clear list
-        onView(withId(R.id.clear_button)).perform(ViewActions.click())
-        // check
-        onView(withId(R.id.recycler_view)).check(matches(hasChildCount(0)))
-    }
 }
