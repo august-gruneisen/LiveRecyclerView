@@ -38,7 +38,7 @@ class MainActivityTest {
     }
 
     @Test
-    fun twoAddItems_twoItemsDisplayed() {
+    fun addTwoItems_twoItemsDisplayed() {
         // add two items
         onView(withId(R.id.add_item_button)).perform(ViewActions.click())
         onView(withId(R.id.add_item_button)).perform(ViewActions.click())
