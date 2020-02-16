@@ -8,13 +8,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val viewModel by viewModels<ScanViewModel>()
+    private val viewModel by viewModels<MainViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val adapter = DataBindingRecyclerViewAdapter(viewModel)
+        val adapter = LiveBoundRecyclerViewAdapter(viewModel)
 
         recycler_view.apply {
             this.hasFixedSize()
@@ -23,12 +23,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         clear_button.setOnClickListener {
-            viewModel.clearScanResults()
+            viewModel.clearList()
             adapter.notifyDataSetChanged()
         }
 
-        add_result_button.setOnClickListener {
-            viewModel.addScanResult()
+        add_item_button.setOnClickListener {
+            viewModel.addItem()
             adapter.notifyDataSetChanged()
         }
 
